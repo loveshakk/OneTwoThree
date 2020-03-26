@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UICollectionViewCell *minus;
 @property (strong, nonatomic) IBOutlet UICollectionViewCell *multi;
 @property (strong, nonatomic) IBOutlet UICollectionViewCell *divide;
+@property (strong, nonatomic) IBOutlet UICollectionViewController *collectionViewController;
 @end
 
 @implementation ViewController

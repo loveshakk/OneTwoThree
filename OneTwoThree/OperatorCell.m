@@ -7,6 +7,7 @@
 //
 
 #import "OperatorCell.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface OperatorCell () <UINavigationControllerDelegate, UICollectionViewDelegate>
 @property (getter=isSelected, assign, nonatomic) BOOL selected;
@@ -25,8 +26,13 @@
 //where the cells will be placed into a grid
 - (void)configureCells {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    
+    //create size of cells
+    CGFloat sizeOfCell = 30.0;
     //fix cell size to be the same
-    //make an array of cells to be the argument here
+    [layout setItemSize:CGSizeMake(sizeOfCell, sizeOfCell)];
+    //add the layout constraints to the cells array
+
     //make a grid out of them using simple maths
 }
 
@@ -42,3 +48,8 @@
 }
 
 @end
+
+//TO DO:
+//
+//make an array of cells to be the argument in configureCells
+
