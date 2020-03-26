@@ -17,6 +17,7 @@
 		F6632EE1242A7E1000EFF21A /* OneTwoThreeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6632EE0242A7E1000EFF21A /* OneTwoThreeUITests.m */; };
 		F6632EEF242A7E4200EFF21A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6632EEE242A7E4200EFF21A /* Assets.xcassets */; };
 		F6632EF1242A970200EFF21A /* SomeIdeas.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F6632EF0242A970200EFF21A /* SomeIdeas.rtf */; };
+		F6632EF4242CF16800EFF21A /* OperatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6632EF3242CF16800EFF21A /* OperatorCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		F6632EE2242A7E1000EFF21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6632EEE242A7E4200EFF21A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
 		F6632EF0242A970200EFF21A /* SomeIdeas.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = SomeIdeas.rtf; sourceTree = "<group>"; };
+		F6632EF2242CF16800EFF21A /* OperatorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperatorCell.h; sourceTree = "<group>"; };
+		F6632EF3242CF16800EFF21A /* OperatorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperatorCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,16 +111,18 @@
 			children = (
 				F6632EB9242A7E0F00EFF21A /* AppDelegate.h */,
 				F6632EBA242A7E0F00EFF21A /* AppDelegate.m */,
-				F6632EF0242A970200EFF21A /* SomeIdeas.rtf */,
 				F6632EBC242A7E0F00EFF21A /* SceneDelegate.h */,
 				F6632EBD242A7E0F00EFF21A /* SceneDelegate.m */,
 				F6632EBF242A7E0F00EFF21A /* ViewController.h */,
 				F6632EC0242A7E0F00EFF21A /* ViewController.m */,
+				F6632EF2242CF16800EFF21A /* OperatorCell.h */,
+				F6632EF3242CF16800EFF21A /* OperatorCell.m */,
 				F6632EC2242A7E0F00EFF21A /* Main.storyboard */,
 				F6632EEE242A7E4200EFF21A /* Assets.xcassets */,
 				F6632EC7242A7E1000EFF21A /* LaunchScreen.storyboard */,
 				F6632ECA242A7E1000EFF21A /* Info.plist */,
 				F6632ECB242A7E1000EFF21A /* main.m */,
+				F6632EF0242A970200EFF21A /* SomeIdeas.rtf */,
 			);
 			path = OneTwoThree;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 			files = (
 				F6632EC1242A7E0F00EFF21A /* ViewController.m in Sources */,
 				F6632EBB242A7E0F00EFF21A /* AppDelegate.m in Sources */,
+				F6632EF4242CF16800EFF21A /* OperatorCell.m in Sources */,
 				F6632ECC242A7E1000EFF21A /* main.m in Sources */,
 				F6632EBE242A7E0F00EFF21A /* SceneDelegate.m in Sources */,
 			);
