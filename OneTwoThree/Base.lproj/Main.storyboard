@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,6 +32,102 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="BEU-HM-cyJ">
+                                <rect key="frame" x="38" y="283" width="330" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="urL-yJ-7CB">
+                                    <size key="itemSize" width="190" height="190"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="add" id="LJu-jr-xFi">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4ca-Tc-FlE">
+                                            <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeK-Dk-TaC">
+                                                    <rect key="frame" x="67" y="67" width="30" height="30"/>
+                                                    <state key="normal" title="Add"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GeK-Dk-TaC" firstAttribute="centerX" secondItem="4ca-Tc-FlE" secondAttribute="centerX" id="9lC-tJ-qlo"/>
+                                                <constraint firstItem="GeK-Dk-TaC" firstAttribute="centerY" secondItem="4ca-Tc-FlE" secondAttribute="centerY" id="U8n-I3-QRB"/>
+                                                <constraint firstItem="GeK-Dk-TaC" firstAttribute="top" secondItem="4ca-Tc-FlE" secondAttribute="top" constant="67" id="XR1-nv-nUn"/>
+                                                <constraint firstItem="GeK-Dk-TaC" firstAttribute="leading" secondItem="4ca-Tc-FlE" secondAttribute="leading" constant="67" id="r7A-Da-9t2"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="165" height="165"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subtract" id="aWY-6l-0gZ">
+                                        <rect key="frame" x="165" y="0.0" width="165" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tmv-Jc-z38">
+                                            <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sU-Jy-GqD">
+                                                    <rect key="frame" x="52" y="67" width="60" height="30"/>
+                                                    <state key="normal" title="Subtract"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8sU-Jy-GqD" firstAttribute="centerX" secondItem="Tmv-Jc-z38" secondAttribute="centerX" id="G5o-GG-fDT"/>
+                                                <constraint firstItem="8sU-Jy-GqD" firstAttribute="top" secondItem="Tmv-Jc-z38" secondAttribute="top" constant="67" id="OEe-t4-4SO"/>
+                                                <constraint firstItem="8sU-Jy-GqD" firstAttribute="leading" secondItem="Tmv-Jc-z38" secondAttribute="leading" constant="52" id="Vau-ma-8Oo"/>
+                                                <constraint firstItem="8sU-Jy-GqD" firstAttribute="centerY" secondItem="Tmv-Jc-z38" secondAttribute="centerY" id="yRh-CR-Oc7"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="165" height="165"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="multiply" id="Q4G-pS-eTx">
+                                        <rect key="frame" x="0.0" y="165" width="165" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ghk-1N-wOR">
+                                            <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwa-fb-fT7">
+                                                    <rect key="frame" x="55" y="67" width="54" height="30"/>
+                                                    <state key="normal" title="Multiply"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zwa-fb-fT7" firstAttribute="leading" secondItem="Ghk-1N-wOR" secondAttribute="leading" constant="55" id="BNn-BW-LLA"/>
+                                                <constraint firstItem="zwa-fb-fT7" firstAttribute="top" secondItem="Ghk-1N-wOR" secondAttribute="top" constant="67" id="Z8Y-v1-ogK"/>
+                                                <constraint firstItem="zwa-fb-fT7" firstAttribute="centerY" secondItem="Ghk-1N-wOR" secondAttribute="centerY" id="dvN-bX-RAx"/>
+                                                <constraint firstItem="zwa-fb-fT7" firstAttribute="centerX" secondItem="Ghk-1N-wOR" secondAttribute="centerX" id="g7j-kf-kY9"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="165" height="165"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="divide" id="kIC-Ai-PY3">
+                                        <rect key="frame" x="165" y="165" width="165" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ATi-cA-ckG">
+                                            <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWJ-4T-IRK">
+                                                    <rect key="frame" x="61" y="67" width="43" height="30"/>
+                                                    <state key="normal" title="Divide"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SWJ-4T-IRK" firstAttribute="centerX" secondItem="ATi-cA-ckG" secondAttribute="centerX" id="Pie-9z-jdk"/>
+                                                <constraint firstItem="SWJ-4T-IRK" firstAttribute="top" secondItem="ATi-cA-ckG" secondAttribute="top" constant="67" id="R2w-y2-z5c"/>
+                                                <constraint firstItem="SWJ-4T-IRK" firstAttribute="centerY" secondItem="ATi-cA-ckG" secondAttribute="centerY" id="p9B-tX-WHQ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="165" height="165"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" name="Chalkboard Background"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

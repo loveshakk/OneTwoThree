@@ -9,11 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (strong, nonatomic) IBOutlet UICollectionViewCell *plus;
-@property (strong, nonatomic) IBOutlet UICollectionViewCell *minus;
-@property (strong, nonatomic) IBOutlet UICollectionViewCell *multi;
-@property (strong, nonatomic) IBOutlet UICollectionViewCell *divide;
-@property (strong, nonatomic) IBOutlet UICollectionViewController *collectionViewController;
+
 @end
 
 @implementation ViewController
@@ -25,13 +21,8 @@
 
 // TO DO:
 //
-// - Delete photos of Ronald McDonald doll
+// - Make the collection view buttons appear.. attach a collection view controller?
+// - Add a background color change when a certain operator button is selected
 
-
-// - Programmatically format the collection view cells into equal quadrents
-- (void)formatCollectionCells {
-    
-
-}
 
 @end
