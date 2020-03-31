@@ -11,5 +11,9 @@
 IB_DESIGNABLE
 @interface OperatorCell : UIView
 @property (copy, nonatomic) IBInspectable NSString *operatorText;
+@property (weak, nonatomic) IBOutlet UIButton *add;
+@property (weak, nonatomic) IBOutlet UIButton *subtract;
+@property (weak, nonatomic) IBOutlet UIButton *multiply;
+@property (weak, nonatomic) IBOutlet UIButton *divide;
 - (void)endAnimation: (NSTimeInterval) duration;
 @end

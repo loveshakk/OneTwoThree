@@ -20,7 +20,8 @@
 }
 
 // TO DO:
-//
+
+// - Wire buttons to hit the navcontroller to conditionally change the RVC
 // - Make the collection view buttons appear.. attach a collection view controller?
 // - Add a background color change when a certain operator button is selected
 
