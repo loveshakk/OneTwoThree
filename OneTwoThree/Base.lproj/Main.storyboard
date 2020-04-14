@@ -1,59 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="uzo-g0-ruy">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="ngc-Qk-1Od" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I1g-GG-KfE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j99-9a-5RC">
-                                <rect key="frame" x="0.0" y="56" width="414" height="44"/>
-                                <color key="barTintColor" name="Chalkboard Background"/>
-                                <items>
-                                    <navigationItem title="OneTwoThree" id="Xrp-TB-bK3">
-                                        <barButtonItem key="leftBarButtonItem" title="Settings" id="kkX-qR-uL7">
-                                            <color key="tintColor" name="Text"/>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Scores" id="x3a-03-eQs">
-                                            <color key="tintColor" name="Text"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wub-ce-N0w">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wub-ce-N0w">
                                 <rect key="frame" x="57" y="298" width="300" height="300"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95g-6y-Y6o">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95g-6y-Y6o">
                                         <rect key="frame" x="196" y="52" width="80" height="30"/>
-                                        <state key="normal" title="Subtraction"/>
+                                        <state key="normal" title="Subtraction">
+                                            <color key="titleColor" name="Text"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Vcw-aT-WTR" kind="show" id="cNO-lZ-95q"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whn-aP-BGy">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whn-aP-BGy">
                                         <rect key="frame" x="209" y="219" width="54" height="30"/>
-                                        <state key="normal" title="Division"/>
+                                        <state key="normal" title="Division">
+                                            <color key="titleColor" name="Text"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Vcw-aT-WTR" kind="show" id="MOl-xf-025"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INa-uL-3Y8">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INa-uL-3Y8">
                                         <rect key="frame" x="18" y="219" width="92" height="30"/>
-                                        <state key="normal" title="Multiplication"/>
+                                        <state key="normal" title="Multiplication">
+                                            <color key="titleColor" name="Text"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Vcw-aT-WTR" kind="show" id="RcN-7N-Piq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdL-3R-hpo">
                                         <rect key="frame" x="36" y="52" width="57" height="30"/>
-                                        <state key="normal" title="Addition"/>
+                                        <state key="normal" title="Addition">
+                                            <color key="titleColor" name="Text"/>
+                                        </state>
                                         <connections>
-                                            <segue destination="lve-jo-PmM" kind="show" id="zwz-nP-QFg"/>
+                                            <segue destination="Vcw-aT-WTR" kind="show" id="c1t-cv-J1a"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" name="Chalkboard Background"/>
                                 <constraints>
                                     <constraint firstItem="INa-uL-3Y8" firstAttribute="leading" secondItem="wub-ce-N0w" secondAttribute="leading" constant="18" id="39Y-4h-xfI"/>
                                     <constraint firstItem="Whn-aP-BGy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="INa-uL-3Y8" secondAttribute="trailing" constant="8" symbolic="YES" id="4oa-2k-0a6"/>
@@ -70,56 +73,63 @@
                         </subviews>
                         <color key="backgroundColor" name="Chalkboard Background"/>
                         <constraints>
-                            <constraint firstItem="j99-9a-5RC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="1BJ-hj-03Z"/>
-                            <constraint firstItem="j99-9a-5RC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7hy-Eo-bRc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wub-ce-N0w" secondAttribute="bottom" constant="264" id="FN3-ah-EF1"/>
-                            <constraint firstItem="wub-ce-N0w" firstAttribute="centerX" secondItem="j99-9a-5RC" secondAttribute="centerX" id="Iew-ba-sw6"/>
-                            <constraint firstItem="wub-ce-N0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="Qq4-xJ-jsB"/>
-                            <constraint firstItem="j99-9a-5RC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4z-8y-1dy"/>
-                            <constraint firstItem="wub-ce-N0w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rOw-Aj-7Wb"/>
+                            <constraint firstItem="wub-ce-N0w" firstAttribute="centerY" secondItem="I1g-GG-KfE" secondAttribute="centerY" id="QVI-z3-vu8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Xvg-6Y-neG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-525" y="90"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Ez9-ae-4OB">
-            <objects>
-                <navigationController id="lve-jo-PmM" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="6yV-hh-5wi"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iht-rw-4MA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="ngc-Qk-1Od" kind="show" id="fXB-TO-x1l"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Z9-lV-BA4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="320" y="81"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="uzo-g0-ruy">
-            <objects>
-                <viewController id="ngc-Qk-1Od" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="I1g-GG-KfE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DEy-oS-xTH"/>
                     </view>
                     <navigationItem key="navigationItem" id="oZt-8G-TYS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsN-vP-pUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1124" y="80"/>
+            <point key="canvasLocation" x="-927.536231884058" y="89.732142857142847"/>
+        </scene>
+        <!--OperatorViewController-->
+        <scene sceneID="9yr-Mb-4k2">
+            <objects>
+                <viewController title="OperatorViewController" id="Vcw-aT-WTR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ftc-aS-ItB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ready set go/time/score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwM-d6-bfD">
+                                <rect key="frame" x="114" y="131" width="187" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="3Ea-QB-bv2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kvk-dY-Rnq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zPb-cS-BDZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="90"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CGa-Ks-wZi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MrC-mL-YGe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DVG-Zy-4xh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ngc-Qk-1Od" kind="relationship" relationship="rootViewController" id="TfD-kZ-6hw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T64-HT-Nyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1839.1304347826087" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="RcN-7N-Piq"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="Chalkboard Background">
             <color red="0.2669999897480011" green="0.44100001454353333" blue="0.20900000631809235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
