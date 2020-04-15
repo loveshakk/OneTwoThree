@@ -10,6 +10,4 @@
 
 @interface OTTLoginViewController : UIViewController
 
-@property (strong, nonatomic)
-
 @end
