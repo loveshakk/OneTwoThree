@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  OTTLoginViewController.h
 //  OneTwoThree
 //
 //  Created by Peter Victoratos on 4/14/20.
@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@interface OTTLoginViewController : UIViewController
 
-@interface LoginViewController : UIViewController
+@property (strong, nonatomic)
 
 @end
-
-NS_ASSUME_NONNULL_END
