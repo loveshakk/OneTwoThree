@@ -16,7 +16,6 @@
 		F6632ECC242A7E1000EFF21A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6632ECB242A7E1000EFF21A /* main.m */; };
 		F6632ED6242A7E1000EFF21A /* OneTwoThreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6632ED5242A7E1000EFF21A /* OneTwoThreeTests.m */; };
 		F6632EE1242A7E1000EFF21A /* OneTwoThreeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6632EE0242A7E1000EFF21A /* OneTwoThreeUITests.m */; };
-		F6632EF1242A970200EFF21A /* SomeIdeas.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F6632EF0242A970200EFF21A /* SomeIdeas.rtf */; };
 		F6632EF4242CF16800EFF21A /* OperatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6632EF3242CF16800EFF21A /* OperatorCell.m */; };
 		F6632EF6242D2B7B00EFF21A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6632EF5242D2B7B00EFF21A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -58,7 +57,6 @@
 		F6632EDC242A7E1000EFF21A /* OneTwoThreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTwoThreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6632EE0242A7E1000EFF21A /* OneTwoThreeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneTwoThreeUITests.m; sourceTree = "<group>"; };
 		F6632EE2242A7E1000EFF21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6632EF0242A970200EFF21A /* SomeIdeas.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = SomeIdeas.rtf; sourceTree = "<group>"; };
 		F6632EF2242CF16800EFF21A /* OperatorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperatorCell.h; sourceTree = "<group>"; };
 		F6632EF3242CF16800EFF21A /* OperatorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperatorCell.m; sourceTree = "<group>"; };
 		F6632EF5242D2B7B00EFF21A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				F6632EC7242A7E1000EFF21A /* LaunchScreen.storyboard */,
 				F6632ECA242A7E1000EFF21A /* Info.plist */,
 				F6632ECB242A7E1000EFF21A /* main.m */,
-				F6632EF0242A970200EFF21A /* SomeIdeas.rtf */,
 			);
 			path = OneTwoThree;
 			sourceTree = "<group>";
@@ -217,6 +214,7 @@
 				TargetAttributes = {
 					F6632EB5242A7E0F00EFF21A = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1140;
 					};
 					F6632ED0242A7E1000EFF21A = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -254,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6632EC9242A7E1000EFF21A /* LaunchScreen.storyboard in Resources */,
-				F6632EF1242A970200EFF21A /* SomeIdeas.rtf in Resources */,
 				F6632EC4242A7E0F00EFF21A /* Main.storyboard in Resources */,
 				F6632EF6242D2B7B00EFF21A /* Assets.xcassets in Resources */,
 			);
@@ -455,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5R6CF59GRY;
 				INFOPLIST_FILE = OneTwoThree/Info.plist;
@@ -464,6 +462,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = loveshakk.OneTwoThree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MNISTHandwritingRecognition/OneTwoThree-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -472,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5R6CF59GRY;
 				INFOPLIST_FILE = OneTwoThree/Info.plist;
@@ -481,6 +483,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = loveshakk.OneTwoThree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MNISTHandwritingRecognition/OneTwoThree-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

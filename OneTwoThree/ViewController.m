@@ -20,10 +20,10 @@
 }
 // MARK:- Things to get done
 
-// TODO: - Add log in page from the get-go
 // TODO: - Add background color change when a certain operator button is selected
 // TODO: - Make the segue function carry in the button identifier so it can change the color and mode
 // TODO: - Add replay button
+
 // TODO: - Add old logic & make it better
 
 

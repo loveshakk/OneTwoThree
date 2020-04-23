@@ -22,10 +22,10 @@
     // Do any additional setup after loading the view.
 }
 
-- (IBAction)userEntered:(NSString * )username LoginCredentials:(NSString *)password {
-    //takes in credentials and assigns to an account. does not save yet.
-    
-    //TODO:- for now just use the user name for the account name
-}
+//- (IBAction)userEntered:(NSString * )username LoginCredentials:(NSString *)password {
+//    //takes in credentials and assigns to an account. does not save yet.
+//    
+//    //TODO:- for now just use the user name for the account name
+//}
 
 @end

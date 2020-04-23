@@ -10,7 +10,6 @@
 
 @interface ViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UICollectionView *operatorSelection;
 
 @end
 
