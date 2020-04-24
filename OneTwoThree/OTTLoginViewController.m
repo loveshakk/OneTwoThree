@@ -24,8 +24,8 @@
 
 //- (IBAction)userEntered:(NSString * )username LoginCredentials:(NSString *)password {
 //    //takes in credentials and assigns to an account. does not save yet.
-//    
-//    //TODO:- for now just use the user name for the account name
 //}
+
+//TODO: Make login button present a new game view, not a modal
 
 @end

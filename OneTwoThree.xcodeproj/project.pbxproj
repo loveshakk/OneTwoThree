@@ -18,6 +18,8 @@
 		F6632EE1242A7E1000EFF21A /* OneTwoThreeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6632EE0242A7E1000EFF21A /* OneTwoThreeUITests.m */; };
 		F6632EF4242CF16800EFF21A /* OperatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6632EF3242CF16800EFF21A /* OperatorCell.m */; };
 		F6632EF6242D2B7B00EFF21A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6632EF5242D2B7B00EFF21A /* Assets.xcassets */; };
+		F6A87FC72452593D00899CF3 /* OTTGameSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A87FC62452593D00899CF3 /* OTTGameSelectViewController.m */; };
+		F6A87FCA245262F000899CF3 /* OTTGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A87FC9245262F000899CF3 /* OTTGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		F6632EF2242CF16800EFF21A /* OperatorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperatorCell.h; sourceTree = "<group>"; };
 		F6632EF3242CF16800EFF21A /* OperatorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperatorCell.m; sourceTree = "<group>"; };
 		F6632EF5242D2B7B00EFF21A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6A87FC52452593D00899CF3 /* OTTGameSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTTGameSelectViewController.h; sourceTree = "<group>"; };
+		F6A87FC62452593D00899CF3 /* OTTGameSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTTGameSelectViewController.m; sourceTree = "<group>"; };
+		F6A87FC8245262F000899CF3 /* OTTGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTTGameViewController.h; sourceTree = "<group>"; };
+		F6A87FC9245262F000899CF3 /* OTTGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTTGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,10 @@
 				F6632EBD242A7E0F00EFF21A /* SceneDelegate.m */,
 				F6632EBF242A7E0F00EFF21A /* ViewController.h */,
 				F6632EC0242A7E0F00EFF21A /* ViewController.m */,
+				F6A87FC8245262F000899CF3 /* OTTGameViewController.h */,
+				F6A87FC9245262F000899CF3 /* OTTGameViewController.m */,
+				F6A87FC52452593D00899CF3 /* OTTGameSelectViewController.h */,
+				F6A87FC62452593D00899CF3 /* OTTGameSelectViewController.m */,
 				F64A374C24467F5700C147B2 /* OTTLoginViewController.h */,
 				F64A374D24467F5700C147B2 /* OTTLoginViewController.m */,
 				F6632EF2242CF16800EFF21A /* OperatorCell.h */,
@@ -280,7 +290,9 @@
 			files = (
 				F6632EC1242A7E0F00EFF21A /* ViewController.m in Sources */,
 				F6632EBB242A7E0F00EFF21A /* AppDelegate.m in Sources */,
+				F6A87FCA245262F000899CF3 /* OTTGameViewController.m in Sources */,
 				F64A374E24467F5700C147B2 /* OTTLoginViewController.m in Sources */,
+				F6A87FC72452593D00899CF3 /* OTTGameSelectViewController.m in Sources */,
 				F6632EF4242CF16800EFF21A /* OperatorCell.m in Sources */,
 				F6632ECC242A7E1000EFF21A /* main.m in Sources */,
 				F6632EBE242A7E0F00EFF21A /* SceneDelegate.m in Sources */,
