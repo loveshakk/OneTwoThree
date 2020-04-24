@@ -8,82 +8,107 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game Select View Controller-->
         <scene sceneID="uzo-g0-ruy">
             <objects>
-                <viewController id="ngc-Qk-1Od" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="ngc-Qk-1Od" customClass="OTTGameSelectViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I1g-GG-KfE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wub-ce-N0w">
-                                <rect key="frame" x="57" y="210" width="300" height="422"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="Pp0-yO-xaJ">
+                                <rect key="frame" x="57" y="95" width="300" height="652"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95g-6y-Y6o">
-                                        <rect key="frame" x="196" y="52" width="80" height="30"/>
-                                        <state key="normal" title="Subtraction">
-                                            <color key="titleColor" name="Text"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Vcw-aT-WTR" kind="show" id="g9I-qm-11a"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whn-aP-BGy">
-                                        <rect key="frame" x="200.5" y="341" width="62.5" height="30"/>
-                                        <state key="normal" title="Division">
-                                            <color key="titleColor" name="Text"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Vcw-aT-WTR" kind="show" id="dGY-VD-eEB"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INa-uL-3Y8">
-                                        <rect key="frame" x="9.5" y="341" width="92" height="30"/>
-                                        <state key="normal" title="Multiplication">
-                                            <color key="titleColor" name="Text"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Vcw-aT-WTR" kind="show" id="PLG-U2-RZW"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdL-3R-hpo">
-                                        <rect key="frame" x="36" y="52" width="57" height="30"/>
-                                        <state key="normal" title="Addition">
-                                            <color key="titleColor" name="Text"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="Vcw-aT-WTR" kind="show" id="2Lm-G2-3uf"/>
-                                        </connections>
-                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dIr-Nw-Vkv">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="147"/>
+                                        <segments>
+                                            <segment title="Easy"/>
+                                            <segment title="Medium"/>
+                                            <segment title="Hard"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wub-ce-N0w">
+                                        <rect key="frame" x="0.0" y="230" width="300" height="422"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95g-6y-Y6o">
+                                                <rect key="frame" x="196" y="52" width="80" height="30"/>
+                                                <state key="normal" title="Subtraction">
+                                                    <color key="titleColor" name="Text"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Vcw-aT-WTR" kind="show" id="g9I-qm-11a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whn-aP-BGy">
+                                                <rect key="frame" x="200.5" y="341" width="62.5" height="30"/>
+                                                <state key="normal" title="Division">
+                                                    <color key="titleColor" name="Text"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Vcw-aT-WTR" kind="show" id="dGY-VD-eEB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INa-uL-3Y8">
+                                                <rect key="frame" x="9.5" y="341" width="92" height="30"/>
+                                                <state key="normal" title="Multiplication">
+                                                    <color key="titleColor" name="Text"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Vcw-aT-WTR" kind="show" id="PLG-U2-RZW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdL-3R-hpo">
+                                                <rect key="frame" x="36" y="52" width="57" height="30"/>
+                                                <state key="normal" title="Addition">
+                                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Vcw-aT-WTR" kind="show" id="2Lm-G2-3uf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oL2-fZ-Fht">
+                                                <rect key="frame" x="133" y="196" width="34" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Start"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="Chalkboard Background"/>
+                                        <constraints>
+                                            <constraint firstItem="INa-uL-3Y8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wub-ce-N0w" secondAttribute="leading" id="39Y-4h-xfI"/>
+                                            <constraint firstItem="Whn-aP-BGy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="INa-uL-3Y8" secondAttribute="trailing" constant="8" symbolic="YES" id="4oa-2k-0a6"/>
+                                            <constraint firstAttribute="trailing" secondItem="Whn-aP-BGy" secondAttribute="trailing" constant="37" id="7g7-kF-IEU"/>
+                                            <constraint firstAttribute="bottom" secondItem="INa-uL-3Y8" secondAttribute="bottom" constant="51" id="K1X-lP-cJm"/>
+                                            <constraint firstAttribute="trailing" secondItem="95g-6y-Y6o" secondAttribute="trailing" constant="24" id="O5V-39-nVB"/>
+                                            <constraint firstItem="Whn-aP-BGy" firstAttribute="leading" secondItem="INa-uL-3Y8" secondAttribute="trailing" constant="99" id="Ruo-e6-N9P"/>
+                                            <constraint firstItem="95g-6y-Y6o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mdL-3R-hpo" secondAttribute="trailing" constant="8" symbolic="YES" id="TXf-Hp-G1C"/>
+                                            <constraint firstItem="mdL-3R-hpo" firstAttribute="top" secondItem="wub-ce-N0w" secondAttribute="top" constant="52" id="Udu-4b-uCV"/>
+                                            <constraint firstItem="95g-6y-Y6o" firstAttribute="top" secondItem="wub-ce-N0w" secondAttribute="top" constant="52" id="c6d-vN-M5t"/>
+                                            <constraint firstItem="mdL-3R-hpo" firstAttribute="leading" secondItem="wub-ce-N0w" secondAttribute="leading" constant="36" id="r9h-Iq-7Lk"/>
+                                            <constraint firstAttribute="bottom" secondItem="Whn-aP-BGy" secondAttribute="bottom" constant="51" id="yAk-0b-YXS"/>
+                                            <constraint firstItem="INa-uL-3Y8" firstAttribute="centerX" secondItem="mdL-3R-hpo" secondAttribute="centerX" constant="-9" id="zRn-YD-BDI"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" name="Chalkboard Background"/>
-                                <constraints>
-                                    <constraint firstItem="INa-uL-3Y8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wub-ce-N0w" secondAttribute="leading" id="39Y-4h-xfI"/>
-                                    <constraint firstItem="Whn-aP-BGy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="INa-uL-3Y8" secondAttribute="trailing" constant="8" symbolic="YES" id="4oa-2k-0a6"/>
-                                    <constraint firstAttribute="trailing" secondItem="Whn-aP-BGy" secondAttribute="trailing" constant="37" id="7g7-kF-IEU"/>
-                                    <constraint firstAttribute="bottom" secondItem="INa-uL-3Y8" secondAttribute="bottom" constant="51" id="K1X-lP-cJm"/>
-                                    <constraint firstAttribute="trailing" secondItem="95g-6y-Y6o" secondAttribute="trailing" constant="24" id="O5V-39-nVB"/>
-                                    <constraint firstItem="Whn-aP-BGy" firstAttribute="leading" secondItem="INa-uL-3Y8" secondAttribute="trailing" constant="99" id="Ruo-e6-N9P"/>
-                                    <constraint firstItem="95g-6y-Y6o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mdL-3R-hpo" secondAttribute="trailing" constant="8" symbolic="YES" id="TXf-Hp-G1C"/>
-                                    <constraint firstItem="mdL-3R-hpo" firstAttribute="top" secondItem="wub-ce-N0w" secondAttribute="top" constant="52" id="Udu-4b-uCV"/>
-                                    <constraint firstItem="95g-6y-Y6o" firstAttribute="top" secondItem="wub-ce-N0w" secondAttribute="top" constant="52" id="c6d-vN-M5t"/>
-                                    <constraint firstItem="mdL-3R-hpo" firstAttribute="leading" secondItem="wub-ce-N0w" secondAttribute="leading" constant="36" id="r9h-Iq-7Lk"/>
-                                    <constraint firstAttribute="bottom" secondItem="Whn-aP-BGy" secondAttribute="bottom" constant="51" id="yAk-0b-YXS"/>
-                                    <constraint firstItem="INa-uL-3Y8" firstAttribute="centerX" secondItem="mdL-3R-hpo" secondAttribute="centerX" constant="-9" id="zRn-YD-BDI"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" name="Chalkboard Background"/>
                         <constraints>
-                            <constraint firstItem="wub-ce-N0w" firstAttribute="centerY" secondItem="I1g-GG-KfE" secondAttribute="centerY" id="38u-4X-wxb"/>
-                            <constraint firstItem="wub-ce-N0w" firstAttribute="top" secondItem="DEy-oS-xTH" secondAttribute="top" constant="210" id="PMT-9P-UNM"/>
-                            <constraint firstItem="wub-ce-N0w" firstAttribute="centerY" secondItem="I1g-GG-KfE" secondAttribute="centerY" id="QVI-z3-vu8"/>
-                            <constraint firstItem="wub-ce-N0w" firstAttribute="centerX" secondItem="I1g-GG-KfE" secondAttribute="centerX" id="VwO-qs-myE"/>
-                            <constraint firstItem="wub-ce-N0w" firstAttribute="leading" secondItem="DEy-oS-xTH" secondAttribute="leading" constant="57" id="eFn-Uv-45o"/>
+                            <constraint firstItem="Pp0-yO-xaJ" firstAttribute="centerY" secondItem="I1g-GG-KfE" secondAttribute="centerY" id="8gd-3l-oak"/>
+                            <constraint firstItem="Pp0-yO-xaJ" firstAttribute="leading" secondItem="DEy-oS-xTH" secondAttribute="leading" constant="57" id="K6b-49-Nca"/>
+                            <constraint firstItem="Pp0-yO-xaJ" firstAttribute="top" secondItem="DEy-oS-xTH" secondAttribute="top" constant="95" id="UGf-vn-ch9"/>
+                            <constraint firstItem="Pp0-yO-xaJ" firstAttribute="centerX" secondItem="I1g-GG-KfE" secondAttribute="centerX" id="aiU-O8-BtD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DEy-oS-xTH"/>
                     </view>
                     <navigationItem key="navigationItem" id="oZt-8G-TYS"/>
+                    <connections>
+                        <outlet property="addition" destination="mdL-3R-hpo" id="m4e-w9-tI1"/>
+                        <outlet property="difficultyControl" destination="dIr-Nw-Vkv" id="ann-wF-33e"/>
+                        <outlet property="division" destination="Whn-aP-BGy" id="VhL-yl-ton"/>
+                        <outlet property="multiplication" destination="INa-uL-3Y8" id="fbP-zX-OYw"/>
+                        <outlet property="startButton" destination="oL2-fZ-Fht" id="IPW-DB-iQ7"/>
+                        <outlet property="subtraction" destination="95g-6y-Y6o" id="dT9-vl-jYn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsN-vP-pUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,6 +291,7 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="uDc-Hq-clM" id="U1e-SO-53R"/>
+                        <outlet property="logoImage" destination="blV-ac-H1d" id="IHN-Rg-v6W"/>
                         <outlet property="passwordField" destination="cUm-6g-qX9" id="00N-SK-bpk"/>
                         <outlet property="usernameField" destination="rrb-Kl-EeG" id="Vst-sI-agz"/>
                     </connections>
@@ -276,7 +302,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="g9I-qm-11a"/>
+        <segue reference="dGY-VD-eEB"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="dirtyburg" width="753" height="753"/>
