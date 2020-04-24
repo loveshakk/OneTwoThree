@@ -24,24 +24,36 @@
                                         <state key="normal" title="Subtraction">
                                             <color key="titleColor" name="Text"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Vcw-aT-WTR" kind="show" id="g9I-qm-11a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whn-aP-BGy">
                                         <rect key="frame" x="200.5" y="341" width="62.5" height="30"/>
                                         <state key="normal" title="Division">
                                             <color key="titleColor" name="Text"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Vcw-aT-WTR" kind="show" id="dGY-VD-eEB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INa-uL-3Y8">
                                         <rect key="frame" x="9.5" y="341" width="92" height="30"/>
                                         <state key="normal" title="Multiplication">
                                             <color key="titleColor" name="Text"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Vcw-aT-WTR" kind="show" id="PLG-U2-RZW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdL-3R-hpo">
                                         <rect key="frame" x="36" y="52" width="57" height="30"/>
                                         <state key="normal" title="Addition">
                                             <color key="titleColor" name="Text"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Vcw-aT-WTR" kind="show" id="2Lm-G2-3uf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Chalkboard Background"/>
@@ -82,11 +94,11 @@
             <objects>
                 <viewController title="OperatorViewController" id="Vcw-aT-WTR" customClass="OTTGameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ftc-aS-ItB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="8dJ-eZ-zDM">
-                                <rect key="frame" x="114" y="87" width="186.5" height="228"/>
+                                <rect key="frame" x="114" y="43" width="186.5" height="228"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready set go/time/score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwM-d6-bfD">
                                         <rect key="frame" x="0.0" y="0.0" width="186.5" height="20.5"/>
@@ -124,7 +136,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YgG-pJ-1jn">
-                                <rect key="frame" x="15" y="375" width="384" height="472"/>
+                                <rect key="frame" x="15" y="331" width="384" height="462"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaZ-IP-35A">
                                         <rect key="frame" x="169" y="216" width="46" height="30"/>
@@ -263,6 +275,9 @@
             <point key="canvasLocation" x="-1942.0289855072465" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="g9I-qm-11a"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="dirtyburg" width="753" height="753"/>
         <namedColor name="Chalkboard Background">
